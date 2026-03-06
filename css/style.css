@@ -1,0 +1,39 @@
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  color: rgb(255, 0, 51);
+  text-transform: capitalize;
+  font-size: medium;
+  border: 2px solid palevioletred;
+  /*  padding between text and border */
+  padding: 30%;
+  /*margin: space outside the border*/
+  margin: auto;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

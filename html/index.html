@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning FE</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+
+  <body>
+    <h1>Homepage</h1>
+    <p>Choose different stylesheet</p>
+    <ul>
+      <li>Style 1</li>
+      <li>Style 2</li>
+      <li>Style 3</li>
+      <li>Style 4</li>
+    </ul>
+
+    <h1>Same Page Different Stylesheets</h1>
+    <p>
+      This is a demonstration of how different stylesheets can change the layout
+      of your HTML page. You can change the layout of this page by selecting
+      different stylesheets in the menu, or by selecting one of the following
+      links:
+    </p>
+    <p>
+      <a href=" " target="_blank" rel="noopener noreferrer ">Style1</a>,
+      <a href=" ">Style2</a>, <a href=" ">Style3</a>,
+      <a href=" ">Style4</a>
+    </p>
+
+    <h2>No style</h2>
+    <p>
+      This page uses DIV elements to group different sections of the HTML page.
+      Click here to see how the page looks like with no stylesheet:
+    </p>
+    <p>
+      <a href="">No stylesheet</a>
+    </p>
+
+    <h3>Sidebar</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+    <br />
+    <p>This is the footer</p>
+
+    <img
+      src="http://bit.ly/3OZRT8E"
+      alt="dog"
+      style="max-width: 100%; height: auto"
+    />
+
+    <picture>
+      <source srcset="http://bit.ly/3OZRT8E" media="(max-width: 600px)" />
+      <source srcset="http://bit.ly/3OZRT8E" media="(max-width: 1500px)" />
+      <source srcset="http://bit.ly/3OZRT8E" />
+      <img src="http://bit.ly/3OZRT8E" alt="dog meme" />
+    </picture>
+
+    <br />
+    <button onclick="setTheme('style1')">Style 1</button>
+    <button onclick="setTheme('style2')">Style 2</button>
+    <button onclick="setTheme('style3')">Style 3</button>
+    <button onclick="setTheme('style4')">Style 4</button>
+
+    <br />
+    <button aria-label="Close">Close button</button>
+
+    <br />
+    <button onclick="alert('Hi bach')">Hi button</button>
+
+    <!--script can be used as 'defer': load after html, or 'async': load parallel-->
+    <script src=" " async>
+      function setTheme(name) {
+        document.getElementById("theme").href = `css/${name}.css`;
+      }
+    </script>
+  </body>
+</html>

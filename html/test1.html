@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of student</title>
+    <link rel="stylesheet" href="/css/test1.css" />
+    <script src="/JS/test1.js" defer></script>
+  </head>
+  <body>
+    <form action="">
+      <div class="d1">
+        <h3>Tìm kiếm</h3>
+        <div class="d1_1">
+          <label for="txtTuKhoa">Từ khóa: </label>
+          <input
+            type="text"
+            name="txtTuKhoa"
+            id="txtTuKhoa"
+            placeholder="Từ khóa cần tìm"
+          />
+          <button type="button" id="btnSearch">Tìm kiếm</button>
+        </div>
+      </div>
+
+      <div class="d2">
+        <h3>Kết quả tìm kiếm</h3>
+        <table>
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="d3">
+        <h3>Nhập thông tin</h3>
+        <div class="d3_1">
+          <button type="button" id="btnAdd" onclick="AddStudent()">
+            Thêm mới
+          </button>
+          <button type="button" id="btnUpdt">Cập nhật</button>
+          <button type="button" id="btnRst">Xóa</button>
+        </div>
+
+        <div class="d3_2">
+          <label for="txtMaSV">Mã SV <span style="color: red">*</span></label>
+          <input type="text" name="txtMaSV" id="txtMaSV" required /> <br />
+          <label for="txtTenSV">Tên SV <span style="color: red">*</span></label>
+          <input type="text" name="txtTenSV" id="txtTenSV" required /> <br />
+          <label for="txtNgaySinh">Ngày sinh</label>
+          <input type="text" name="txtNgaySinh" id="txtNgaySinh" /> <br />
+          <label for="rdbGioiTinh">Giới tính</label>
+          <input type="radio" name="rdbGioiTinh" value="Nam" /> Nam
+          <input type="radio" name="rdbGioiTinh" value="Nữ" /> Nữ
+          <br />
+          <label for="drpKhoa">Khoa <span style="color: red">*</span></label>
+          <select name="drpKhoa" id="drpKhoa" required>
+            <option value="">Chọn khoa</option>
+            <option value="CS">Khoa CS</option>
+            <option value="Math">Khoa Toán</option>
+            <option value="Phy">Khoa Vật Lý</option>
+          </select>
+          <br />
+          <input type="button" value="Submit" id="btnSubmit" />
+          <br />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

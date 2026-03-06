@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* universal selector (*) */
+/* * {
+  text-align: center;
+  color: blue;
+} */
+
+/**/
+/* #p1 {
+  color: rgb(237, 17, 17);
+  text-shadow: 10px;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle;
+} */
+
+/*Floating*/
+
+/* .box {
+  float: left;
+  width: 33%;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+} */
+
+/* .navbar {
+  background-color: dimgray;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #04aa6d;
+} */
+
+/* .dropdown {
+  display: block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid red;
+  width: calc(25%-20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid blue;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} */
+
+.responsive-form {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rebeccapurple;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20%;
+  background-color: aquamarine;
+}
+
+label {
+  min-width: 48%;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  min-width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  min-width: 45%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#message {
+  resize: none;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50%-20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% -20px);
+  }
+}

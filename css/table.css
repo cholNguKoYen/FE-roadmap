@@ -1,0 +1,27 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* border-radius: 10px; */
+}
+th,
+td {
+  background-color: #96d4d4;
+  border-style: dotted;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+table {
+  border-spacing: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(211, 70, 70);
+}
+tr:hover {
+  background-color: #d6eeee;
+}

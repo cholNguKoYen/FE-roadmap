@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  background-color: #81aee9;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: red !important;
+  color: white !important;
+}
+
+/* table {
+  border-spacing: 30px;
+} */
+
+.d1,
+.d2,
+.d3 {
+  border: 2px solid red;
+  padding: 15px;
+  margin: 10px;
+}
+
+label[for="txtTuKhoa"],
+label[for="txtMaSV"],
+label[for="txtTenSV"],
+label[for="txtNgaySinh"],
+label[for="rdbGioiTinh"],
+label[for="drpKhoa"] {
+  border: 1px solid red;
+  background-color: beige;
+}
+
+.d1_1,
+.d3_1 {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.d3_2 label,
+.d3_2 input,
+.d3_2 select {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+#txtTuKhoa {
+  width: 100%;
+  max-width: 150px;
+  transition: width 0.3s ease-in-out;
+}
+
+#txtTuKhoa::before {
+  width: 300px;
+}
+
+#btnSearch,
+#btnAdd,
+#btnUpdt,
+#btnRst {
+  background-color: red;
+  color: white;
+}

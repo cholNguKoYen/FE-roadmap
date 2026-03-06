@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check document</title>
+  </head>
+  <body>
+    <!-- <h2>Test JS</h2>
+    <p>JS change the value of src attribute of img</p>
+    <button onclick="document.getElementById('myImage').src = 'pic_bulbon.gif'">
+      Turn on
+    </button>
+    <img src="myImage" alt="pic_bulbon.gif" style="width: 100px" />
+    <button onclick="document.getElementById('myImage').src = 'pic_bulbon.gif'">
+      Turn off
+    </button> -->
+
+    <p id="demo">Here's the text</p>
+    <button onclick="myFunction()">Click to change</button>
+  </body>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Changed demo";
+    }
+  </script>
+</html>
