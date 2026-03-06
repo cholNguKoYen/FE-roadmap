@@ -1,22 +1,13 @@
-import { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
+import Counter from "./components/Counter";
+import ShoppingList from "./components/ShoppingList";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>React Learning</h1>
+      <Counter></Counter>
+      <ShoppingList></ShoppingList>
     </>
   );
 }
-
-export default App;
